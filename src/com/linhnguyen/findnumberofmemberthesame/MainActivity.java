@@ -38,28 +38,30 @@ public class MainActivity extends Activity {
 					for (j = 0; j < length - sum; j++) {
 						bigsum = 1;
 						i = j;
-						while (true) {
-							int founds = string.indexOf(arr[j], i + 1);
-
-							if (founds != -1) {
-								bigsum++;
-								// swap charAt(founds) vs charAt(i+1)
-								j++;
-								char foundItem = arr[founds];
-								char nowItem = arr[j];
-								if (foundItem != nowItem) {
-									char a = foundItem;
-									foundItem = nowItem;
-									nowItem = a;
-								}
-
-							} else
-								break;
-							i = founds;
-							if (i >= length - 1)
-								break;
-
-						}
+//						for(){
+//							
+//						}
+						
+						
+//						while (true) {
+//							int founds = string.indexOf(arr[j], i + 1);
+//							if (founds != -1) {
+//								bigsum++;
+//								// swap charAt(founds) vs charAt(i+1)
+//								j++;
+//								if (j != founds) {
+//									char a = arr[founds];
+//									arr[founds] = arr[j];
+//									arr[j] = a;
+//								}
+//
+//							} else
+//								break;
+//							i = founds;
+//							if (i >= length - 1)
+//								break;
+//
+//						}
 						if (bigsum > sum) {
 							temp = arr[j];
 							sum = bigsum;
